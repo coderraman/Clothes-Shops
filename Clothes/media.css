@@ -1,0 +1,224 @@
+/* Media Queries for Mobile Devices (Max Width: 600px) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar img {
+        width: 300px;
+        margin: 10px auto;
+        margin-top: 5%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5%;
+        width: 100%;
+    }
+    .Hero {
+        flex-direction: column;
+        margin-top: 20%;
+        gap: 20px;
+    }
+
+    .product-sec{
+        /* border: 2px solid fuchsia; */
+        height: 10vh;
+    }
+    .main{
+        width: 100%;
+        height: 80%;
+    }
+    .main img{
+        object-fit: contain;
+        border-radius: 15px;
+        padding: 15px;
+
+    }
+
+    .img {
+        width: 90%;
+        height: auto;
+        margin-top: 95%;
+    }
+
+    .hero-text {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .contact-btn {
+        padding: 10px;
+        font-size: 1rem;
+        margin: 10% auto;
+    }
+
+    .About-section {
+        /* border: 2px solid gold; */
+        flex-direction: column;
+        padding: 20px;
+        margin: 1%;
+        overflow: hidden;
+    }
+
+    .about-head {
+        font-size: 1.8rem;
+    }
+
+    .product-sec {
+        margin-top: 10%;
+    }
+
+    #contact {
+        /* border: 2px solid khaki; */
+        flex-direction: column;
+        justify-content: center;
+        margin: 2%;
+        padding: 1%;
+        overflow: hidden;
+        margin-top: 5%;
+
+    }
+    .contact-section{
+        text-align: center;
+    }
+
+    #contact iframe{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .social {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* Media Queries for Tablets (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 5px 20px;
+    }
+
+    .navbar img {
+        width: 100px;
+    }
+
+    .navbar ul {
+        gap: 5%;
+    }
+
+    .Hero {
+        gap: 5%;
+        margin-top: 10%;
+    }
+
+    .img {
+        width: 80%;
+        height: auto;
+    }
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
+    .contact-btn {
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+
+    .About-section {
+        padding: 20px;
+    }
+
+    .about-head {
+        font-size: 2rem;
+    }
+
+    #contact {
+        gap: 10px;
+    }
+
+    .social {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+/* Media Queries for Larger Screens (Max Width: 1440px) */
+@media screen and (max-width: 1440px) {
+    .navbar {
+        padding: 0px 20px;
+    }
+
+    .navbar img {
+        width: 110px;
+    }
+
+    .Hero {
+        gap: 3%;
+        margin-top: 8%;
+    }
+
+    .img {
+        width: 400px;
+        height: auto;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        margin-top: 5%;
+        font-weight: 500;
+        padding: 15px;
+    }
+
+    .contact-btn {
+        padding: 8px 15px;
+        font-size: 1.2rem;
+    }
+
+    .About-section {
+        padding: 20px;
+    }
+
+    .about-head {
+        font-size: 2rem;
+    }
+
+    #contact {
+        gap: 5%;
+    }
+}
+
+/* Toogle Button */
+/* Initially hide the menu on mobile screens */
+#menu-items {
+    display: none;
+  }
+  
+  /* Show the menu when the toggle button is clicked */
+  .menu-open #menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: ease-in-out 1s;
+  }
+  
+  /* Make sure the toggle button is hidden on larger screens */
+  @media (min-width: 768px) {
+    .toogle-btn {
+      display: none;
+      width: 20px;
+      margin-right: 0;
+    }
+  }
+  .fa-solid{
+    font-size: 2rem;
+    margin: 2%;
+    padding: 15px;
+  }
+  
+  
+/* Toogle Button */

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes-Shop --Wholeseller</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="/Images/logo-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="Carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="media.css">
+  </head>
+  <body class="bg-white">
+    <!-- UI Code -->
+
+<!-- Header Section -->
+<section class="home section">
+  <div class="toogle-btn md:hidden">
+    <button id="menu-toggle">
+      <i class="fa-solid fa-bars" class="w-11 p-14 m-6" ></i>
+    </button>
+  </div>
+  <nav class="navbar">
+    <img src="/Images/logo-removebg-preview.png" alt="Logo" class="w-36" />
+    <ul id="menu-items" class="hidden">
+      <li><a href="#home" class="hover:text-orange-400 font-semibold tracking-wide">Home</a></li>
+      <li><a href="#products" class="hover:text-orange-400 font-semibold tracking-wide">Products</a></li>
+      <li><a href="#about" class="hover:text-orange-400 font-semibold tracking-wide">About</a></li>
+      <li><a href="#contact" class="hover:text-orange-400 font-semibold tracking-wide">Contact</a></li>
+    </ul>
+    <button disabled class="bg-black text-orange-400 px-3 py-2 m-2 mr-4 border-none rounded-lg">+91 98994 55651</button>
+  </nav>
+  
+</section>
+<!-- Header Section -->
+
+<!-- Header Section -->
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="py-10 fade-in"> 
+      <div class="Hero flex justify-center items-center">
+        <img src="/Images/product-1.jpg" alt="" class="img" />
+        <div class="text-center">
+          <h2 class="hero-text text-5xl font-bold text-white mb-4">
+            Aishani <span>Apparels</span>
+          </h2>
+          <div class="contact-btn-span">
+            <a href="#contact"><button class="contact-btn">Contact</button></a>
+            <span>Now</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="fade-in">
+      <div class="product-sec">
+        <h1 class="head">Our Products</h1>
+        <main class="main">
+          <img src="/Images/Images-1.jpg" class="slide" alt="">
+          <img src="/Images/Images-3.jpg" class="slide" alt="">
+          <img src="/Images/Images-2.jpg" class="slide" alt="">
+          <img src="/Images/Images-4.jpg" class="slide" alt="">
+          <div class="btn">
+            <button onclick="nextPic()" class="Next"><i class="fa-solid fa-arrow-right"></i></button>
+            <button onclick="lastPic()" class="Last"><i class="fa-solid fa-arrow-left"></i></button>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="fade-in">
+      <div class="About-section">
+        <div class="image-about">
+          <img src="/Images/Images-2.jpg" alt="AboutUsImage" />
+        </div>
+        <div>
+          <h3 class="about-head">About Us!</h3>
+          <p>
+            <br>
+            At Aashani Apparels, fashion is more than just clothing – it’s a way of expressing who you are without saying a word. <br />
+            We believe in crafting styles that resonate with individuality, celebrating every thread, color, and design that empowers you to feel confident and bold. <br />
+    
+            <br /><br />
+            We believe in crafting styles that resonate with individuality, celebrating every thread, color, and design that empowers you to feel confident and bold. <br />
+            Whether it's the latest trends or classic essentials, we strive to bring you collections that blend modern sophistication with a touch of personal flair.
+            <br /><br />
+            Join us in a fashion experience where your style speaks for you, and where every outfit tells a story. <br />
+            fashionable footwear in all sizes and styles, all within a few clicks.
+            <br /><br />
+            Discover the art of dressing well – because at [Your Brand Name], you are always in fashion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact-Us -->
+    <section id="contact" class="fade-in">
+      <div class="contact-text"> 
+        <h1 class="contact-section">Contact Us
+          <div class="social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </h1>
+        <p class="para-contact">
+          Aishani Apparels, <br>
+          B1b, 23, near Andhra Education Society Senior Secondary School, <br>
+          Janakpuri, Delhi, 110058 <br> 
+          +91 98994 55651
+        </p>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.0752142047772!2d77.0868368711035!3d28.625253297765575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0510725bfaf5%3A0x965a82dbf8e558aa!2sAndhra%20Education%20Society%20Senior%20Secondary%20School!5e0!3m2!1sen!2sin!4v1727804729134!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+    <!-- UI Code -->
+    <script src="index.js" defer></script>
+  </body>
+</html>

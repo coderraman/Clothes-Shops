@@ -1,0 +1,72 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Product Section */
+
+main {
+    margin: auto;
+    width: 60%; /* Increased width for better visibility */
+    margin-top: 5%;
+    min-height: 50vh; /* Adjusted height for better proportions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Softer shadow */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    background-color: #f9f9f9; /* Subtle background color */
+}
+
+/* Slide styling */
+.slide {
+    position: absolute;
+    transition: transform 0.5s ease-in-out; /* Smoother transition */
+    min-height: 50vh;
+}
+
+.slide img {
+    height: 100%; /* Ensure image covers the height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 10px; /* Same rounded corners as main */
+}
+
+/* Button container */
+.btn {
+    position: absolute;
+    width: 100%;
+    bottom: 90px; /* Moved buttons to bottom */
+    display: flex;
+    justify-content: space-between; /* Spaced buttons evenly */
+    padding: 0 10px;
+    z-index: 2;
+}
+
+/* Button styling */
+.Next, .Last {
+    padding: 10px 0px;
+    background-color: rgb(16, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Next:hover, .Last:hover {
+    background-color: darkorange; /* Hover effect for buttons */
+}
+
+@media (max-width: 768px) {
+    /* Responsive adjustments */
+    main {
+        width: 100%; /* Full width on smaller screens */
+        height: 100vh; /* Adjusted height */
+    }
+    
+    .Next, .Last {
+        padding: 8px 5px;
+        font-size: 1rem;
+    }
+}
